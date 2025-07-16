@@ -14,5 +14,10 @@ public class Bai3 {
         System.out.printf("Tich cua %d va %d la: %d%n", a, b, a * b);
         System.out.printf("Thuong cua %d va %d la: %.2f%n", a, b, 1.0 * a / b);
         System.out.printf("Chia lay du cua %d va %d la: %d%n", a, b, a % b);
+        if(a==b) {
+            System.out.printf("2 so nguyen vua nhap bang nhau!%n", a, b);
+        }else {
+            System.out.printf("2 so nguyen vua nhap khac nhau!", a, b);
+        }
     }    
 }
