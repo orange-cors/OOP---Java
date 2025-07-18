@@ -44,8 +44,8 @@ public class Docs3 {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("Nhap kich thuoc n: ");
             int n = sc.nextInt();
-            if (n <= 0) {
-                System.out.println("Kich thuoc mang phai lon hon 0.");
+            if (n < 1 || n > 50) {
+                System.out.println("Kich thuoc mang khong hop le.");
                 return;
             }
             int[][] Res = MaTranXoanOc(n);

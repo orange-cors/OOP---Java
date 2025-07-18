@@ -18,12 +18,12 @@ public class Docs2 {
     }
 
     public static void CMang(int[] a, int n){
-        for(int i=1;i<n;i++){
-            if(i != n-1 && i % 2 != 0) {
-                a[i] += a[i+1] - a[i-1];
+        for(int i=1;i<n;i+=2){
+            if(i != n-1) {
+                a[i] += Math.abs(a[i-1] - a[i+1]);
             }
-            else if(i == n-1 && i% 2 != 0) {
-                a[i] += a[i-1];
+            else{
+                a[i] += Math.abs(a[i-1]);
             }
         }
     }
@@ -32,8 +32,8 @@ public class Docs2 {
         try(Scanner sc = new Scanner(System.in)){
             System.out.print("Nhap kich thuoc mang: ");
             n = sc.nextInt();
-            if (n <= 0) {
-                System.out.println("Kich thuoc mang phai lon hon 0.");
+            if (n <= 0 || n> 10000) {
+                System.out.println("Kich thuoc mang khong hop le.");
                 return;
             }
         int []a = new int[n];
