@@ -8,11 +8,15 @@ public class Bai3 {
             str = sc.nextLine();
             String xoa = str.trim();
             System.out.println("Chuoi sau khi xoa khoang trang: " + xoa);
+
             boolean check = true;
             int trai = 0, phai = str.length() - 1;
+            String kttrai = String.valueOf(str.charAt(trai));
+            String ktphai = String.valueOf(str.charAt(phai));
             while (trai < phai) {
-                if (str.charAt(trai) != str.charAt(phai)) {
-                    check = false;
+                check = kttrai.equalsIgnoreCase(ktphai);
+                if (!check) {
+                    break;
                 }
                 trai++;
                 phai--;
@@ -21,6 +25,9 @@ public class Bai3 {
                 System.out.println("Chuoi la doi xung!");
             }else {
                 System.out.println("Chuoi khong la doi xung!");
+            }
+            for(int i = str.length() - 1; i >= 0; i--) {
+                System.out.print(str.charAt(i));
             }
         }
 
