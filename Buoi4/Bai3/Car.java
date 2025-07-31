@@ -8,6 +8,9 @@ public class Car {
         this.brand = brand;
         this.maxspeed = maxspeed;
     }
+    public int getSpeed() {
+        return maxspeed;
+    }
     void run() {
         System.out.println("Xe [" + brand + "] dang chay voi toc do toi da [" + maxspeed + "] km/h");
     }
