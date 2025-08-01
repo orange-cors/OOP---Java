@@ -106,7 +106,7 @@ public class Docs2 {
         show(list);
         int choose;
         do{
-            System.out.printf("-----------------MENU------------------%n1. Them sinh vien moi%n2. Sua thong tin sinh vien%n3. Sap xep sinh vien theo tuoi%n4. Sap xep sinh vien theo GPA%n5. Sap xep sinh vien theo so tiet nghi%n6. Xoa sinh vien khoi danh sach%n7. Exit%n");
+            System.out.printf("\n-----------Quan Ly Sinh Vien-----------%n1. Them sinh vien moi%n2. Sua thong tin sinh vien%n3. Sap xep sinh vien theo tuoi%n4. Sap xep sinh vien theo GPA%n5. Sap xep sinh vien theo so tiet nghi%n6. Xoa sinh vien khoi danh sach%n7. Thoat!%n");
             choose= sc.nextInt();
             if(choose == 1){
                 System.out.println("Them sinh vien moi:");
